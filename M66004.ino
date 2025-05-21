@@ -30,8 +30,8 @@
 #define VFD_cs      (9)  /* chip select M66004 */
 #define VFD_reset   (10)
 
-const int phaseA = 2;           // This is the trigger pin
-const int phaseB = 3;           // This is 2 pin of encoder, not need be a trigger I only need read status.
+const int phaseA = 2;           // This is first pin of encoder used as trigger pin (used pin 2 of Arduino)
+const int phaseB = 3;           // This is second pin of encoder (pin 3 of Arduino), not need be a trigger I only need read status.
 int keyLine1 = A0;
 int keyLine1Val = 0;
 int keyLine2 = A1;
